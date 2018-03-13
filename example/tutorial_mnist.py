@@ -474,15 +474,11 @@ def main_test_cnn_layer():
 
 if __name__ == '__main__':
     sess = tf.InteractiveSession()
-
-    # Dropout and Dropconnect
-    # main_test_layers(model='relu')  # model = relu, dropconnect
-
-    # Single Denoising Autoencoder
+    """Dropout and Dropconnect"""
+    # main_test_layers(model='relu')                # model = relu, dropconnect
+    """Single Denoising Autoencoder"""
     # main_test_denoise_AE(model='sigmoid')       # model = relu, sigmoid
-
-    # Stacked Denoising Autoencoder
-    # main_test_stacked_denoise_AE(model='relu')  # model = relu, sigmoid
-
-    # CNN
-    main_test_cnn_layer()
+    """Stacked Denoising Autoencoder"""
+    main_test_stacked_denoise_AE(model='relu')  # model = relu, sigmoid
+    """CNN"""
+    # main_test_cnn_layer()
